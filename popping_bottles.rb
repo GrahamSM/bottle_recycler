@@ -4,7 +4,7 @@ def num_bottles(inv)
 end
 
 def total_caps(inv)
-	return inv/2
+	inv/2
 end
 #Every two bottles will return 1 bottle
 def bottle_redeem(num_bottles)
@@ -43,7 +43,7 @@ def main
 		puts "Caps: #{leftover_caps(bottles)}"
 		puts "Would you like to continue (y/n)?"
 		condition = gets.chomp.downcase
-		if !(condition=="y")
+		if !(condition == "y")
 			repl = false
 		end
 	end
